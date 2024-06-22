@@ -1,0 +1,183 @@
+/* CSS Variables */
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'WorkSans', sans-serif;
+    --color-primary: #3023ae;
+    --color-secondary: #eb7f7b;
+    --color-bg: rgba(120, 70, 154, 0.2);
+    --color-white: #ffffff;
+    --color-black: #2f2f2f;
+    --color-lightgray: rgba(216, 216, 216, 0.21);
+    --color-gray: rgba(151, 151, 151, 0.21);
+    --color-yellow: #fdcb1e;
+    --color-green: #50e3c2;
+    --color-blue: #3343e5;
+    --color-orange: #ff7700;
+  }
+  
+  /* Universal Styles */
+  html, body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(359deg, var(--color-primary), var(--color-secondary));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--font-secondary);
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: grid;
+    grid-template-columns: 10px 1fr 3fr 1fr;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-bg);
+    text-align: center;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+  }
+  
+  .navbar h1 {
+    grid-column: 3 / 4;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    margin: 0;
+    align-self: center;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.35);
+    position: absolute;
+    top: 8px;
+  }
+  
+  .search-bar input {
+    float: left;
+    height: 18px;
+    margin-top: 9px;
+    margin-left: 7px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+  }
+  
+  .search-icon {
+    float: left;
+    margin-top: 9px;
+    margin-left: 7px;
+  }
+  
+  /* Site Body */
+  .site-body {
+    position: absolute;
+    top: 100px;
+    margin-left: 50px;
+  }
+  
+  /* Container */
+  .container {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Card Columns */
+  .card-column {
+    background-color: var(--color-white);
+    gap: 10px;
+    min-height: 700px;
+    display: grid;
+    grid-template-rows: 20px repeat(5, 100px);
+    align-content: space-around;
+    grid-auto-rows: 100px;
+  }
+  
+  .card-column h2 {
+    margin: 0 auto;
+    padding: 0;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-black);
+  }
+  
+  .taskgroup-heading {
+    margin-left: 15px;
+    margin-top: 7px;
+  }
+  
+  /* Cards */
+  .card {
+    margin: 0 15px;
+    background-color: var(--color-lightgray);
+    border: solid 1px var(--color-gray);
+    position: relative;
+  }
+  
+  .rectangle {
+    width: 57px;
+    height: 6px;
+    display: inline-block;
+    margin-left: 7px;
+  }
+  
+  .list-icon {
+    display: inline-block;
+    margin-left: 7px;
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .task-description {
+    margin-left: 7px;
+    margin-top: 0;
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    color: var(--color-black);
+  }
+  
+  .ellipsis-icon {
+    float: right;
+    margin-right: 15px;
+  }
+  
+  .task-date {
+    display: inline-block;
+    font-family: var(--font-secondary);
+    font-size: 10px;
+    text-align: left;
+    color: #9b9b9b;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    left: 25px;
+  }
+  
+  /* Color Classes */
+  .yellow { background-color: var(--color-yellow); }
+  .green { background-color: var(--color-green); }
+  .blue { background-color: var(--color-blue); }
+  .orange { background-color: var(--color-orange); }
+  
+  /* Add Card */
+  .add-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .add-card {
+    background-color: var(--color-lightgray);
+    border: solid 1px var(--color-gray);
+    color: var(--color-black);
+  }
+  
